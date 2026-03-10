@@ -1,6 +1,6 @@
 // src/services/api.js
 // All backend calls isolated here — never fetch() directly in components
-const BASE = process.env.REACT_APP_API_URL || "http://localhost:5000/api";
+const BASE = "https://ecoai-1bul.onrender.com/api";
 
 async function request(path, options = {}) {
   const res = await fetch(`${BASE}${path}`, {
